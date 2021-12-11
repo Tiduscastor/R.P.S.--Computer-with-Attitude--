@@ -24,6 +24,7 @@ def game():
             
             if countAgain == 0:
                 break
+                sys.exit()
             elif newgame.upper() != "Y" and newgame.upper() != "YES" and newgame.upper() != "N" and newgame.upper() != "NO":
                 print("Type one of the given options, please.")
                 print(countAgain, "Tries left to follow directions.")
@@ -36,7 +37,7 @@ def game():
                 time.sleep(2)
                 print("Bye!")
                 time.sleep(2)
-                break
+                sys.exit()
 
     while True:
         cChoice = random.choice(i)
